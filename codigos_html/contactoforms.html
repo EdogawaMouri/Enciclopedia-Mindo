@@ -23,19 +23,23 @@
 	</nav>
 	
 	<main>
-        <h1>Formulario de Contacto</h1>
+        <h2>Formulario de Contacto</h2>
+		<h3>Los campos marcador con un asterisco (*) son obligatorios.</h3>
 
         <form action="respuesta_contacto.html" method="post">
             <!-- Asunto -->
-            <label for="asunto">Asunto:</label>
+            <label for="asunto">(*)Asunto:</label>
+			<p>Describa brevemente su duda.</p><br>
             <input type="text" id="asunto" name="asunto" required><br><br>
 
             <!-- Comentario o Pregunta -->
-            <label for="comentario">Comentario o Pregunta:</label><br>
+            <label for="comentario">(*)Comentario o Pregunta:</label><br>
+			<p>Describa de manera extensa su duda.</p><br>
             <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
 
             <!-- Yo soy -->
             <label for="yosoy">Yo soy:</label>
+			<p>Marque la casilla que más se ajuste a su perfil.</p><br>
             <select id="yosoy" name="yosoy">
                 <option value="paciente">Paciente</option>
                 <option value="cientifico">Científico</option>
@@ -47,11 +51,13 @@
 
             <!-- Fecha de Nacimiento -->
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+			<p>Introduzca su fecha de naciemiento siguiendo este formato: dd/mm/aaaa. O marquela en el calendario.</p><br>
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
 
             <!-- Sexo -->
             <fieldset>
                 <legend>Sexo:</legend>
+				<p>Marque la casilla que más se ajuste a su perfil.</p><br>
                 <input type="radio" id="hombre" name="sexo" value="hombre">
                 <label for="hombre">Hombre</label><br>
                 <input type="radio" id="mujer" name="sexo" value="mujer">
@@ -61,11 +67,13 @@
             </fieldset><br>
 
             <!-- Correo Electrónico -->
-            <label for="email">Correo Electrónico:</label>
+            <label for="email">(*)Correo Electrónico:</label>
+			<p>Introduzca su dirección de correo electrónico. Debe tener un @ seguido de letras.</p><br>
             <input type="email" id="email" name="email" required><br><br>
 
             <!-- Deseo recibir más información -->
             <input type="checkbox" id="info" name="info">
+			<p>Marque la casilla si quiere recibir más información.</p><br>
             <label for="info">Deseo recibir más información</label><br><br>
 
             <!-- Enviar -->
